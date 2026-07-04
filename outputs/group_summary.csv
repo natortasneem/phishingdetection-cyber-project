@@ -1,0 +1,5 @@
+,URL_Depth,URL_Depth,URL_Depth,URL_Length,URL_Length,URL_Length,Redirection,Redirection,Redirection,Web_Forwards,Web_Forwards,Web_Forwards
+,mean,median,std,mean,median,std,mean,median,std,mean,median,std
+Label,,,,,,,,,,,,
+0,3.3268,3.0,1.9954,1.0,1.0,0.0,0.0132,0.0,0.1141,0.118,0.0,0.3226
+1,2.8172,2.0,2.2252,0.5468,1.0,0.4979,0.0138,0.0,0.1167,0.0926,0.0,0.2899

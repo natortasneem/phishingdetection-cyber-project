@@ -1,0 +1,134 @@
+{
+  "shape": [
+    10000,
+    18
+  ],
+  "columns": [
+    "Domain",
+    "Have_IP",
+    "Have_At",
+    "URL_Length",
+    "URL_Depth",
+    "Redirection",
+    "https_Domain",
+    "TinyURL",
+    "Prefix_Suffix",
+    "DNS_Record",
+    "Web_Traffic",
+    "Domain_Age",
+    "Domain_End",
+    "iFrame",
+    "Mouse_Over",
+    "Right_Click",
+    "Web_Forwards",
+    "Label"
+  ],
+  "missing_values_total": 0,
+  "class_counts": {
+    "0": 5000,
+    "1": 5000
+  },
+  "class_percent": {
+    "0": 50.0,
+    "1": 50.0
+  },
+  "single_value_columns": [],
+  "duplicated_rows": 5626,
+  "duplicated_domains": 6447,
+  "unique_domains": 3553,
+  "has_temporal_column": false,
+  "top_spearman_abs": {
+    "URL_Length": 0.5413,
+    "Prefix_Suffix": 0.3027,
+    "URL_Depth": 0.1501,
+    "Have_At": 0.1184,
+    "Web_Traffic": 0.1088,
+    "iFrame": 0.0984,
+    "Domain_Age": 0.0851,
+    "Have_IP": 0.0744,
+    "TinyURL": 0.0729,
+    "Domain_End": 0.0686,
+    "Mouse_Over": 0.0513,
+    "Web_Forwards": 0.0414
+  },
+  "high_corr_pairs_ge_0_7": [
+    {
+      "feature_1": "iFrame",
+      "feature_2": "Mouse_Over",
+      "abs_spearman": 0.807077054548922
+    },
+    {
+      "feature_1": "Mouse_Over",
+      "feature_2": "Web_Forwards",
+      "abs_spearman": 0.749876521470023
+    }
+  ],
+  "engineered_features": [
+    "domain_length",
+    "domain_digit_count",
+    "domain_hyphen_count",
+    "domain_dot_count",
+    "subdomain_count",
+    "has_www",
+    "tld_length",
+    "is_common_tld"
+  ],
+  "random_split_train_test": [
+    8000,
+    2000
+  ],
+  "group_split_train_test": [
+    8205,
+    1795
+  ],
+  "group_split_test_class_percent": {
+    "0": 48.25,
+    "1": 51.75
+  },
+  "models_trained": [
+    "Random Forest",
+    "Gradient Boosting",
+    "Decision Tree",
+    "Logistic Regression"
+  ],
+  "best_model_random_split": "Random Forest",
+  "best_model_metrics_random_split": {
+    "Accuracy": 0.959,
+    "Precision": 0.9925,
+    "Recall": 0.925,
+    "F1": 0.9576,
+    "F2": 0.9378,
+    "MCC": 0.9201,
+    "ROC_AUC": 0.9948,
+    "TN": 993,
+    "FP": 7,
+    "FN": 75,
+    "TP": 925
+  },
+  "best_group_split_model_by_f1": "Gradient Boosting",
+  "best_group_split_metrics": {
+    "Accuracy": 0.8708,
+    "Precision": 0.8727,
+    "Recall": 0.8784,
+    "F1": 0.8755,
+    "F2": 0.8772,
+    "MCC": 0.7411,
+    "ROC_AUC": 0.9391,
+    "TN": 747,
+    "FP": 119,
+    "FN": 113,
+    "TP": 816
+  },
+  "top_feature_importances": {
+    "domain_length": 0.3193,
+    "URL_Length": 0.2539,
+    "URL_Depth": 0.1005,
+    "domain_dot_count": 0.0622,
+    "subdomain_count": 0.0523,
+    "Prefix_Suffix": 0.0276,
+    "tld_length": 0.0272,
+    "domain_hyphen_count": 0.0243,
+    "Web_Traffic": 0.018,
+    "domain_digit_count": 0.0164
+  }
+}
